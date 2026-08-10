@@ -30,7 +30,11 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${scrolled
         ? "bg-[var(--surface)]/95 backdrop-blur border-b border-[var(--border)] text-[var(--foreground)]"
+<<<<<<< HEAD
         : "bg-transparent text-white"
+=======
+        : "bg-transparent text-[var(--foreground)]"
+>>>>>>> 3200385c146e32f68c300db706e4841e94c5d8fb
         }`}
     >
       <nav
