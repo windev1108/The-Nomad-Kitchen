@@ -128,43 +128,43 @@ export type RestaurantData = {
 };
 
 export const restaurant: RestaurantData = {
-  name: "The Nomad Kitchen",
+  name: "KOK Sen Restaurant",
 
   brand: {
-    shortName: "The Nomad Kitchen",
-    tagline: "Mediterranean Restaurant",
+    shortName: "KOK Sen Restaurant",
+    tagline: "Singapore Restaurant",
     description:
-      "At The Nomad Kitchen, our rotisserie chicken is slow-roasted every Sunday in a traditional rotisserie machine, allowing the meat to stay tender and naturally juicy while the skin turns evenly golden with a delicate crispness and a rich, comforting aroma. Served with roasted potatoes, seasonal vegetables, and warm gravy on the side, it’s a generous, well-balanced dish that’s perfect for sharing at the table. To make sure each chicken is prepared at its best",
+      "At KOK Sen Restaurant, our rotisserie chicken is slow-roasted every Sunday in a traditional rotisserie machine, allowing the meat to stay tender and naturally juicy while the skin turns evenly golden with a delicate crispness and a rich, comforting aroma. Served with roasted potatoes, seasonal vegetables, and warm gravy on the side, it’s a generous, well-balanced dish that’s perfect for sharing at the table. To make sure each chicken is prepared at its best",
   },
 
   location: {
-    address: "21-23 An Thượng 32, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam",
-    city: "Da Nang",
-    country: "Vietnam",
+    address: "4 Keong Saik Rd., Singapore 089110",
+    city: "Singapore",
+    country: "Singapore",
     // mapsUrl intentionally omitted — only add once a real, valid URL exists.
   },
 
   contact: {
-    phone: "+84961061173",
+    phone: "+6597272533",
     email: undefined,
     website: undefined,
   },
 
   hours: [
-    { days: "Monday", open: "09:00", close: "22:00" },
-    { days: "Tuesday", open: "09:00", close: "22:00" },
-    { days: "Wednesday", open: "09:00", close: "22:00" },
-    { days: "Thursday", open: "09:00", close: "22:00" },
-    { days: "Friday", open: "09:00", close: "22:00" },
-    { days: "Saturday", open: "09:00", close: "22:00" },
-    { days: "Sunday", open: "09:00", close: "22:00" },
+    { days: "Monday", closed: true },
+    { days: "Tuesday", open: "12:00", close: "21:15" },
+    { days: "Wednesday", open: "12:00", close: "21:15" },
+    { days: "Thursday", open: "12:00", close: "21:15" },
+    { days: "Friday", open: "12:00", close: "21:15" },
+    { days: "Saturday", open: "12:00", close: "21:15" },
+    { days: "Sunday", open: "12:00", close: "21:15" },
   ],
 
   social: {},
 
   hero: {
-    title: "The Nomad Kitchen",
-    subtitle: "21-23 An Thượng 32, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam",
+    title: "KOK Sen Restaurant",
+    subtitle: "4 Keong Saik Rd., Singapore 089110",
     image: "/images/hero-placeholder.jpg",
   },
 
@@ -179,76 +179,59 @@ export const restaurant: RestaurantData = {
   menu: {
     categories: [
       {
-        name: "SIDE DISHES",
-        items: [
-          { name: "Jalapeño Peppers", price: "25.000đ" },
-          { name: "1 Bacon Slice", price: "30.000đ" },
-          { name: "Compound Irish Butter", price: "30.000đ" },
-          { name: "Feta Cheese", price: "55.000đ" },
-          { name: "Mozzarella Cheese", price: "30.000đ" },
-          { name: "Brie Cheese", price: "60.000đ" },
-          { name: "3 Falafel Balls", price: "65.000đ" },
-          { name: "Fries", price: "75.000đ" },
-          { name: "Mashed Potatoes", price: "75.000đ" },
-          { name: "2 Vegan Sausage", price: "75.000đ" },
-          { name: "Extra Grill or Steam Veggies", price: "75.000đ" },
-          { name: "230g Grilled Chicken Breast", price: "110.000đ" },
-          { name: "150g Buffalo Steak", price: "140.000đ" },
-          { name: "Fish Fillet (Grilled or Fried)", price: "115.000đ" },
-          {
-            name: "150g AUS Organic Grass-Fed Flat Iron Steak",
-            description: "No hormones, MB2",
-            price: "285.000đ",
-          },
-        ],
-      },
-      {
-        name: "RED WINE",
+        name: "FISH",
         items: [
           {
-            name: "l'Ame du Château Haut Meyreau",
-            description: "Cabernet Sauvignon | 13.5% | Bordeaux, France — pairs with Beef, Poultry, Lamb",
-            price: "595.000đ",
+            name: "Deep Fried Pomfret",
+            description: "Flaky deep fried pomfret with scrumptious sauces (choice of sambal).",
+            price: "Market Price",
           },
           {
-            name: "Barramundi",
-            description: "Shiraz | 14% | South Eastern Australia — pairs with Barbecue, Braised Beef, Lamb, Hard Cheese",
-            price: "765.000đ",
+            name: "Teochew Steam Grouper",
+            description: "Steamed grouper consisting of lots of vegetables & pork with a flavourful soup.",
+            price: "Market Price",
           },
           {
-            name: "Woodbridge By Robert Mondavi",
-            description: "Merlot | California/Lodi, U.S.A — pairs with Grilled Meats, especially Steak, Lamb, Pork Chops, and Hamburgers, Pasta with Bolognese Sauce",
-            price: "1.090.000đ",
+            name: "Curry Fish Head",
+            description: "Boiled fresh fish head with mouth-watering curry sauce (choice of fish tail).",
+            price: "$43 / $85",
           },
           {
-            name: "Salentein Portillo",
-            description: "Malbec | 13.5% | Uco Valley/Mendoza, Argentina — pairs with Beef, Poultry, Lamb, Cheese",
-            price: "765.000đ",
+            name: "Bittergourd Fish Head / Sliced Fish",
+            description:
+              "Stir fried bittergourd fish meat with fermented black bean sauce. (\"All Fish Meat\" variant: $20 / $30 / $40)",
+            price: "$15 / $23 / $30",
           },
           {
-            name: "Louis Latour Domaine De Valmoissine",
-            description: "Pinot Noir | 13.5% | Provence, France — pairs with Grilled Red Meat, Cheese, Red Fruit",
-            price: "860.000đ",
+            name: "Deep Fried Fish Meat",
+            description: "Deep fried grouper fish meat with scrumptious sauces.",
+            price: "$30 / $45 / $60",
           },
           {
-            name: "Duca del Valentino",
-            description: "Negroamaro | 16.0% | Puglia, Italy — a very full-bodied red wine to delight your meaty cravings",
-            price: "1.005.000đ",
+            name: "'Gan Xiang' Fish Meat",
+            description: "Stir fried deep fried Toman fish meat with sambal kaffir leaves. Spicy.",
+            price: "$20 / $30 / $40",
           },
           {
-            name: "Muga Rioja Reserva",
-            description: "Tempranillo, Garnacha, Mazuelo, Graciano | 14% | Rioja, Spain — pairs with Beef, Veal, Iberico Charcuterie and Casseroles",
-            price: "1.485.000đ",
+            name: "Claypot Grouper Fish Meat",
+            description: "Braised grouper fish meat with overwhelming garlic flavour.",
+            price: "$50",
           },
-        ],
-      },
-      {
-        name: "PROSECCO",
-        items: [
           {
-            name: "Prosecco Valdo",
-            description: "Glera | 11% | Veneto, Italy — pairs with Aperitif, Fish & Seafood, Ham, Appetizers & Snacks",
-            price: "860.000đ",
+            name: "Deep Fried Grouper",
+            description:
+              "Crisp-fried debone grouper with sweet & sour sauce, topped with shredded pineapple, capsicum and chillies.",
+            price: "Market Price",
+          },
+          {
+            name: "'HK' Steam Fish Tail",
+            description: "Steam grouper fish tail with scrumptious sauces (choice of Teochew style).",
+            price: "$85",
+          },
+          {
+            name: "Deep Fried Toman Fish Meat",
+            description: "Deep fried Toman fish meat to dip with Chef's creation sauce.",
+            price: "$20 / $30 / $40",
           },
         ],
       },
@@ -268,7 +251,7 @@ export const restaurant: RestaurantData = {
   },
 
   seo: {
-    title: "The Nomad Kitchen",
-    description: "At The Nomad Kitchen, our rotisserie chicken is slow-roasted every Sunday in a traditional rotisserie machine, allowing the meat to stay tender and naturally juicy while the skin turns evenly golden with a delicate crispness and a rich, comforting aroma. Served with roasted potatoes, seasonal vegetables, and warm gravy on the side, it’s a generous, well-balanced dish that’s perfect for sharing at the table. To make sure each chicken is prepared at its best",
+    title: "KOK Sen Restaurant",
+    description: "At KOK Sen Restaurant, our rotisserie chicken is slow-roasted every Sunday in a traditional rotisserie machine, allowing the meat to stay tender and naturally juicy while the skin turns evenly golden with a delicate crispness and a rich, comforting aroma. Served with roasted potatoes, seasonal vegetables, and warm gravy on the side, it’s a generous, well-balanced dish that’s perfect for sharing at the table. To make sure each chicken is prepared at its best",
   },
 };
