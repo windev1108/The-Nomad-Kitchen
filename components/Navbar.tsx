@@ -28,11 +28,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${
-        scrolled
-          ? "bg-[var(--surface)]/95 backdrop-blur border-b border-[var(--border)] text-[var(--foreground)]"
-          : "bg-transparent text-white"
-      }`}
+      className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${scrolled
+        ? "bg-[var(--surface)]/95 backdrop-blur border-b border-[var(--border)] text-[var(--foreground)]"
+        : "bg-transparent text-[var(--foreground)]"
+        }`}
     >
       <nav
         aria-label="Primary"
@@ -48,13 +47,13 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-sm">
           {NAV_LINKS.map((link) => (
             <li key={link.href}
-               
+
+              className="relative text-current hover:text-[var(--accent)] transition-colors"
+            >
+              <a
+                href={link.href}
                 className="relative text-current hover:text-[var(--accent)] transition-colors"
               >
-                <a
-                href={link.href}
-                  className="relative text-current hover:text-[var(--accent)] transition-colors"
-                >
                 {link.label}
               </a>
             </li>
@@ -65,11 +64,10 @@ export function Navbar() {
           {reservationHref && (
             <a
               href={reservationHref}
-              className={`inline-flex items-center px-5 py-2.5 text-xs tracking-wide uppercase transition-colors ${
-                scrolled
-                  ? "bg-[var(--foreground)] text-[var(--surface)] hover:bg-[var(--accent)]"
-                  : "bg-white text-[var(--foreground)] hover:bg-[var(--accent)] hover:text-white"
-              }`}
+              className={`inline-flex items-center px-5 py-2.5 text-xs tracking-wide uppercase transition-colors ${scrolled
+                ? "bg-[var(--foreground)] text-[var(--surface)] hover:bg-[var(--accent)]"
+                : "bg-white text-[var(--foreground)] hover:bg-[var(--accent)] hover:text-white"
+                }`}
             >
               Reserve a Table
             </a>
