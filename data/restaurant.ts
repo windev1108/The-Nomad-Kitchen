@@ -170,9 +170,9 @@ export const restaurant: RestaurantData = {
 
   about: {
     eyebrow: "OUR STORY",
-    title: "[Short, specific headline about the restaurant's approach]",
+    title: "Allday flavor",
     description:
-      "[Factual paragraph about the restaurant — no invented history, chef names, or awards.]",
+      "No matter the time of day, our kitchen is here for you. A place to ease into your morning, power through your midday, or end the evening on a warm and satisfying note. We are open from 9AM - 10PM, Tuesday to Sunday. Every moment comes with a taste worth lingering for",
     image: "/images/about-placeholder.jpg",
   },
 
